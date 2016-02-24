@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="nclabAuthorization:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="nclabAuthorization.war">
+      <element id="artifact" artifact-name="nclabAuthorization:war exploded" />
+    </root>
+  </artifact>
+</component>

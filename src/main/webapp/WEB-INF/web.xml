@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+    </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>authorization</servlet-name>
+        <url-pattern>/authorization</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>authorization</servlet-name>
+        <servlet-class>com.nclab.authorization.AuthorizationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>labs</servlet-name>
+        <url-pattern>/labs</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>labs</servlet-name>
+        <servlet-class>com.nclab.authorization.LabsTableServlet</servlet-class>
+    </servlet>
+</web-app>
